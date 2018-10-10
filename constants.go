@@ -16,6 +16,7 @@
 package gousb
 
 /*
+#cgo darwin pkg-config: libusb-1.0
 #cgo linux pkg-config: libusb-1.0
 #cgo windows CFLAGS: -IC:/libusb/include/libusb-1.0
 #include <libusb.h>
