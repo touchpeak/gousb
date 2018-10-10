@@ -25,7 +25,10 @@ import (
 )
 
 /*
-#cgo pkg-config: libusb-1.0
+#cgo linux pkg-config: libusb-1.0
+#cgo windows CFLAGS: -IC:/libusb/include/libusb-1.0
+#cgo windows amd64 LDFLAGS: -LC:/libusb/MinGW64/dll -lusb-1.0
+#cgo windows i386 LDFLAGS: -LC:/libusb/MinGW32/dll -lusb-1.0
 #include <libusb.h>
 #include <stdlib.h>
 
